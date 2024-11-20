@@ -1,0 +1,40 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7fafc;
+}
+
+a:hover {
+    color: #e53e3e; /* Tailwind's red-600 color */
+}
+
+input, textarea, select {
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #f56565;
+}
+/* Importing Animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Custom Animations */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate__slideIn {
+    animation: slideIn 1s ease-out;
+}
+
