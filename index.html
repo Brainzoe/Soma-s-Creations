@@ -6,18 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mmesoma's Creations - Fashion & Cake Designer">
     <title>Mmesoma's Creations</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HHN5E9ZWF0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-HHN5E9ZWF0');
-</script>
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mmesoma's Creations - Fashion & Cake Designer">
+    <meta property="og:description" content="Discover stunning fashion and delicious cakes crafted with elegance and creativity.">
+    <meta property="og:image" content="https://somacreations.vercel.app/assets/images/hero-image.jpg">
+    <meta property="og:url" content="https://somacreations.vercel.app">
+    <meta property="og:type" content="website">
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mmesoma's Creations">
+    <meta name="twitter:description" content="Where creativity meets elegance in fashion and cakes.">
+    <meta name="twitter:image" content="https://somacreations.vercel.app/assets/images/hero-image.jpg">
+
+    <!-- Structured Data Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://somacreations.vercel.app",
+      "name": "Mmesoma's Creations",
+      "description": "Where creativity meets elegance in fashion and cakes.",
+      "author": {
+        "@type": "Person",
+        "name": "Mmesoma Mercy Okezie"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://somacreations.vercel.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "image": "https://somacreations.vercel.app/assets/images/hero-image.jpg"
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body class="font-sans bg-gray-50 text-gray-900">
@@ -29,44 +54,60 @@
                 <a href="#hero">Mmesoma's Creations</a>
             </div>
             <div class="space-x-6">
-                <a href="#about" class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">About</a>
-                <a href="#portfolio" class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">Portfolio</a>
-                <a href="#order" class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">Order</a>
-                <a href="#contact" class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">Contact</a>
+                <a href="#about"
+                    class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">About</a>
+                <a href="#portfolio"
+                    class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">Portfolio</a>
+                <a href="#order"
+                    class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">Order</a>
+                <a href="#contact"
+                    class="hover:text-gray-200 transition duration-300 ease-in-out transform hover:scale-110">Contact</a>
             </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative h-screen bg-cover bg-center  animate__animated animate__fadeIn animate__delay-1s" style="background-image: url('assets/images/hero-image.jpg');">
+    <section id="hero" class="relative h-screen bg-cover bg-center  animate__animated animate__fadeIn animate__delay-1s"
+        style="background-image: url('assets/images/hero-image.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto text-center text-white relative z-10 pt-24">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-2s">Discover the Art of Fashion & Cakes</h1>
-            <p class="text-xl md:text-2xl mb-8 animate__animated animate__fadeIn animate__delay-3s">Where creativity meets elegance in every piece of fashion and cake.</p>
-            <a href="#portfolio" class="bg-pink-600 py-3 px-6 rounded-full text-lg hover:bg-pink-700 transition-all duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-4s">Explore Now</a>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate__animated animate__fadeIn animate__delay-2s">Discover
+                the Art of Fashion & Cakes</h1>
+            <p class="text-xl md:text-2xl mb-8 animate__animated animate__fadeIn animate__delay-3s">Where creativity
+                meets elegance in every piece of fashion and cake.</p>
+            <a href="#portfolio"
+                class="bg-pink-600 py-3 px-6 rounded-full text-lg hover:bg-pink-700 transition-all duration-300 transform hover:scale-110 animate__animated animate__fadeIn animate__delay-4s">Explore
+                Now</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-16 px-6 bg-white text-center animate__animated animate__fadeIn animate__delay-1s">
         <h2 class="text-3xl font-semibold mb-6">About Mmesoma</h2>
-        <p class="text-lg mb-6">Mmesoma Mercy Okezie is a talented fashion designer and cake maker with a passion for creativity. She is currently studying Mass Communications at Benue State University, where she hones her craft in both fashion and cake-making.</p>
-        <p class="text-lg">Her journey is a blend of elegance, creativity, and dedication, creating fashion pieces and cakes that captivate the heart.</p>
+        <p class="text-lg mb-6">Mmesoma Mercy Okezie is a talented fashion designer and cake maker with a passion for
+            creativity. She is currently studying Mass Communications at Benue State University, where she hones her
+            craft in both fashion and cake-making.</p>
+        <p class="text-lg">Her journey is a blend of elegance, creativity, and dedication, creating fashion pieces and
+            cakes that captivate the heart.</p>
     </section>
 
     <!-- Fashion Portfolio Section -->
     <section id="portfolio" class="py-16 px-6 bg-gray-100 animate__animated animate__fadeIn animate__delay-1s">
         <h2 class="text-3xl font-semibold text-center mb-8">Fashion Portfolio</h2>
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="assets/images/fashion1.jpg" alt="Fashion 1" class="w-full h-64 object-cover">
+            <div
+                class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <!-- <img src="assets/images/fashion1.jpg" alt="Fashion 1" class="w-full h-64 object-cover"> -->
+                <img src="assets/images/fashion1.jpg" alt="Fashion 1" class="w-full h-64 object-cover lazyload">
+
                 <div class="p-4">
                     <h3 class="text-xl font-semibold">Elegant Dress</h3>
                     <p class="text-gray-600">A sophisticated design for a glamorous look.</p>
                 </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
-                <img src="assets/images/fashion2.jpg" alt="Fashion 2" class="w-full h-64 object-cover">
+            <div
+                class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                <img src="assets/images/fashion2.jpg" alt="Fashion 2" class="w-full h-64 object-cover lazyload">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold">Stylish Outfit</h3>
                     <p class="text-gray-600">Fashion that blends comfort with style.</p>
@@ -80,14 +121,16 @@
     <section id="cakes" class="py-16 px-6 bg-white animate__animated animate__fadeIn animate__delay-1s">
         <h2 class="text-3xl font-semibold text-center mb-8">Cake Creations</h2>
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+            <div
+                class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
                 <img src="assets/images/cake1.jpeg" alt="Cake 1" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold">Chocolate Delight</h3>
                     <p class="text-gray-600">A rich and indulgent chocolate cake.</p>
                 </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+            <div
+                class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
                 <img src="assets/images/cake2.jpg" alt="Cake 2" class="w-full h-64 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold">Vanilla Dream</h3>
@@ -101,9 +144,12 @@
     <!-- Order Form Section -->
     <section id="order" class="py-16 bg-pink-100 text-center animate__animated animate__fadeIn animate__delay-1s">
         <h2 class="text-3xl font-semibold mb-8">Place Your Order</h2>
-        <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg animate__animated animate__zoomIn animate__delay-2s">
-            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-3 border border-gray-300 rounded" required>
-            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-3 border border-gray-300 rounded" required>
+        <form action="#" method="POST"
+            class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg animate__animated animate__zoomIn animate__delay-2s">
+            <input type="text" name="name" placeholder="Your Name"
+                class="w-full mb-4 p-3 border border-gray-300 rounded" required>
+            <input type="email" name="email" placeholder="Your Email"
+                class="w-full mb-4 p-3 border border-gray-300 rounded" required>
             <select name="cake-flavor" class="w-full mb-4 p-3 border border-gray-300 rounded" required>
                 <option value="">Select Cake Flavor</option>
                 <option value="chocolate">Chocolate Delight</option>
@@ -111,19 +157,28 @@
                 <!-- Add more flavors as needed -->
             </select>
             <input type="date" name="delivery-date" class="w-full mb-4 p-3 border border-gray-300 rounded" required>
-            <textarea name="special-instructions" placeholder="Special Instructions" class="w-full mb-4 p-3 border border-gray-300 rounded"></textarea>
-            <button type="submit" class="w-full bg-pink-600 py-3 text-white rounded-full transform hover:scale-110 transition duration-300 ease-in-out">Place Order</button>
+            <textarea name="special-instructions" placeholder="Special Instructions"
+                class="w-full mb-4 p-3 border border-gray-300 rounded"></textarea>
+            <button type="submit"
+                class="w-full bg-pink-600 py-3 text-white rounded-full transform hover:scale-110 transition duration-300 ease-in-out">Place
+                Order</button>
         </form>
     </section>
 
     <!-- Contact Form Section -->
     <section id="contact" class="py-16 bg-gray-100 text-center animate__animated animate__fadeIn animate__delay-1s">
         <h2 class="text-3xl font-semibold mb-8">Contact Mmesoma</h2>
-        <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg animate__animated animate__zoomIn animate__delay-2s">
-            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-3 border border-gray-300 rounded" required>
-            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-3 border border-gray-300 rounded" required>
-            <textarea name="message" placeholder="Your Message" class="w-full mb-4 p-3 border border-gray-300 rounded" required></textarea>
-            <button type="submit" class="w-full bg-pink-600 py-3 text-white rounded-full transform hover:scale-110 transition duration-300 ease-in-out">Send Message</button>
+        <form action="#" method="POST"
+            class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg animate__animated animate__zoomIn animate__delay-2s">
+            <input type="text" name="name" placeholder="Your Name"
+                class="w-full mb-4 p-3 border border-gray-300 rounded" required>
+            <input type="email" name="email" placeholder="Your Email"
+                class="w-full mb-4 p-3 border border-gray-300 rounded" required>
+            <textarea name="message" placeholder="Your Message" class="w-full mb-4 p-3 border border-gray-300 rounded"
+                required></textarea>
+            <button type="submit"
+                class="w-full bg-pink-600 py-3 text-white rounded-full transform hover:scale-110 transition duration-300 ease-in-out">Send
+                Message</button>
         </form>
     </section>
 
